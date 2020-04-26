@@ -115,12 +115,14 @@
     </section>
 
     <article class="sign-up">
-      <h2 class="sign-up__title">Get early access today</h2>
-      <p class="sign-up__content">It only takes a minute to sign up and our free starter tier is extremely generous. If you have any questions, our support team would be happy to help you.</p>
-      <form action="" class="sign-up__form">
-        <input class="sign-up" type="text" name="" id="">
-        <button class="sign-up__btn btn" type="submit">Get Started For Free</button>
-      </form>
+      <div class="sign-up__wrapper">
+        <h2 class="sign-up__title">Get early access today</h2>
+        <p class="sign-up__content">It only takes a minute to sign up and our free starter tier is extremely generous. If you have any questions, our support team would be happy to help you.</p>
+        <form action="" class="sign-up__form">
+          <input class="sign-up__input" type="text" name="sign-up-email" id="sign-up-email" placeholder="email@example.com">
+          <button class="sign-up__btn btn" type="submit">Get Started For Free</button>
+        </form>
+      </div>
     </article>
   </main>
 
@@ -129,8 +131,8 @@
 
     <section class="page-footer__contacts contacts">
       <p class="contacts__location">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-      <p>+1-543-123-4567</p>
-      <p><a class="contacts__link" href="mailto:example@fylo.com">example@fylo.com</a></p>
+      <a class="contacts__phone" href="tel:+1-543-123-4567">+1-543-123-4567</a>
+      <a class="contacts__email" href="mailto:example@fylo.com">example@fylo.com</a>
     </section>
 
     <ul class="page-footer__links useful-links">
@@ -141,27 +143,38 @@
     </ul>
 
     <ul class="page-footer__links useful-links">
-      <li class="useful-links__item"><a href="#" class="useful-links__link">Contact Us</a></li>
-      <li class="useful-links__item"><a href="#" class="useful-links__link">Terms</a></li>
-      <li class="useful-links__item"><a href="#" class="useful-links__link">Privacy</a></li>
+      <li class="useful-links__item"><a class="useful-links__link" href="#">Contact Us</a></li>
+      <li class="useful-links__item"><a class="useful-links__link" href="#">Terms</a></li>
+      <li class="useful-links__item"><a class="useful-links__link" href="#">Privacy</a></li>
     </ul>
 
     <ul class="page-footer__social social">
-      <li class="social__facebook">
-        <a class="social__link social__link--facebook" href="#" aria-label="Follow us on Facebook">Facebook</a>
+      <li class="social__item">
+        <a class="social__link social__link--facebook" href="#" aria-label="Follow us on Facebook">
+          <img class="social__icon" src="img/icon-facebook.svg" width="55" height="55" alt="facebook icon">
+        </a>
       </li>
-      <li class="social__twitter">
-        <a class="social__link social__link--twitter" href="#" aria-label="Follow us on Twitter">Twitter</a>
+      <li class="social__item">
+        <a class="social__link social__link--twitter" href="#" aria-label="Follow us on Twitter">
+          <img class="social__icon" src="img/icon-twitter.svg" width="55" height="55" alt="twitter icon">
+        </a>
       </li>
-      <li class="social__instagram">
-        <a class="social__link social__link--instagram" href="#" aria-label="Follow us on Instagram">Instagram</a>
+      <li class="social__item">
+        <a class="social__link social__link--instagram" href="#" aria-label="Follow us on Instagram">
+          <img class="social__icon" src="img/icon-instagram.svg" width="55" height="55" alt="instagram icon">
+        </a>
       </li>
     </ul>
 
-    <p class="page-footer__attribution attribution">
-      Challenge by <a class="attribution__link" href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener noreferrer">Frontend Mentor</a> |
-      Coded by <a class="attribution__link" href="https://github.com/yevgalis" target="_blank" rel="noopener noreferrer">Evgeniy Alishevets</a>
-    </p>
+    <div class="page-footer__attribution">
+      <p class="attribution">
+        Challenge by <a class="attribution__link" href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener noreferrer">Frontend Mentor</a> |
+        Coded by <a class="attribution__link" href="https://github.com/yevgalis" target="_blank" rel="noopener noreferrer">Evgeniy Alishevets</a>
+      </p>
+      <p class="attribution">
+        Social Icons by <a class="attribution__link" href="https://iconscout.com/contributors/ibrandify-icons" rel="noopener noreferrer">Ibrandify Icons</a> on <a class="attribution__link" href="https://iconscout.com" rel="noopener noreferrer">Iconscout</a>
+      </p>
+    </div>
   </footer>
 
 </body>
